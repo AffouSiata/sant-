@@ -7,12 +7,11 @@ nav{
     align-items: center;
     
 }
-.left{
+.cotes{
     color: white!important;
     font-size: 40px!important;
 }
 .navbar-brand{
-    
     float: left; 
     font-size: 45px;
     color: chartreuse;
@@ -60,6 +59,23 @@ ul li a:hover{
     background: whitesmoke;
     color: black;
 }
+/* fin navbar*/
+.centre{
+    height: 880px;
+    width: 100%;
+    margin-top: 100px;
+}
+.texte{
+
+}
+.texte h1{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    text-align: center;   
+}
+
+/* footer*/
 footer{
     border: 1px solid black;
 }
