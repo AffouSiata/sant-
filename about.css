@@ -61,12 +61,9 @@ ul li a:hover{
 }
 /* fin navbar*/
 .centre{
-    height: 880px;
+    height: 500px;
     width: 100%;
     margin-top: 100px;
-}
-.texte{
-
 }
 .texte h1{
     font-size: 40px;
@@ -74,27 +71,74 @@ ul li a:hover{
     font-weight: bold;
     text-align: center;   
 }
-.aligne{
+/* .aligne{
     display: flex;
     flex-direction: row;
+} */
+/* .haut img{
+   display: block;
+   left: 0px;
+} */
+.texte{
+    opacity: 1;
+    top: 1px;
 }
-.images{
-    border: 1px solid black;
-    height: 800px;
-    width: 50%
+.flesion{
+    height: 500px;
+    display: flex;
+    flex-direction: row; 
+    margin-right: 20px;
+}
+img{
+    width: 100%;
+}
+.phrase{
+    height: 150px;
 }
 .text{
-    border: 1px solid black;
-    height: 800px;
+    
+    height: 200px;
+    /* border: 1px solid black; */
     width: 50%;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+.defile{
+    /* display: flex;  */
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 50px;
+    padding-bottom: 50px;
+    
+
+}
+.ply{
+    
+    width: 1000px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 350px;
+    
+}
+.slick-prev{
+    border: none;
+    background: none;
+}
+.slick-next{
+    border: none;
+    background: none;
+}
+.fas{
+    color: black;
+}
+.card{
+    margin-right: 20px;
 }
 
 /* footer*/
-footer{
-    border: 1px solid black;
+footer i{
+    color: rgb(18,102, 241);
 }
-h5{
-    background-attachment: fixed;
-    background-color: deepskyblue;
-
-}
+/* rgba(255, 255, 255, 0.913) */

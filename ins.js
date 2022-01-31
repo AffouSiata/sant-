@@ -4,15 +4,27 @@ let email = document.getElementById("email");
 let pwd = document.getElementById("pwd");
 let valide = document.getElementById("valider");
 
-valide.addEventListener("click" , (e) =>{
-    e.preventDefault();
-    let user ={
-        nom:nom.Value,
-        prenom:prenom.Value,
-        email:email.Value,
-        pwd:pwd.Value,
+if(!localStorage.getItem("users")) {
+    localStorage.setItem("users", JSON.stringify([]))
+    // console.log(localStorage.getItem("users")
+}
 
-    }
-    localStorage.setItem("local",JSON.stringify(user));
-    console.log(user);
+
+valide.addEventListener("click" , (e) =>{
+     e.preventDefault();
+    console.log(nom.value);
+ 
+   const user =
+       {
+            nom: nom.value,
+            prenom: prenom.value,
+            email: email.value,
+            password: pwd.value,
+        }
+    let users = JSON.parse(localStorage.getItem("users"))
+    // console.log(users)
+    users.push(user);
+    localStorage.setItem("users", JSON.stringify(users))
+    console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
+    // console.log(user);
 })

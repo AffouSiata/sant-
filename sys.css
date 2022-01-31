@@ -69,3 +69,10 @@ ul li a:hover{
     height: 500px;
     
 }
+.cause .title{
+    margin-top: 30px;
+    padding: 40px;
+    border: 1px solid;
+    border-color:gray;
+    margin-bottom: 40px;
+}
