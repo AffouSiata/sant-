@@ -7,29 +7,25 @@ nav{
     align-items: center;
     
 }
-.cotes{
+.bg-light {
+	background-color: transparent !important;
+}
+.cote{
     color: white!important;
     font-size: 40px!important;
 }
 .navbar-brand{
+    
     float: left; 
     font-size: 45px;
     color: chartreuse;
     font-weight: bold;
 }
-/* .collapse{
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-*/
 ul li {
-    margin-right: 60px;
+    margin-right: 40px;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 ul li a:hover{
@@ -40,13 +36,14 @@ ul li a:hover{
 .boite{
     float: right;
     background-color: black;
-    height: 50px;
-    padding: 10px;
-    width: 150px;
+    height: 40px;
+   
+    width: 120px;
     border-radius: 10px;
     font-weight: bold;
     color: white;
     cursor: pointer;
+    padding-right: 20px;
 
 }
 .boite li a{
@@ -54,47 +51,17 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-decoration: none;
+
 }
 .boite:hover{
     background: whitesmoke;
     color: black;
 }
-/* fin navbar*/
-.centre{
-    height: 880px;
-    width: 100%;
+.ins{
     margin-top: 100px;
 }
-.texte{
-
-}
-.texte h1{
-    font-size: 40px;
-    color: black;
-    font-weight: bold;
-    text-align: center;   
-}
-.aligne{
-    display: flex;
-    flex-direction: row;
-}
-.images{
-    border: 1px solid black;
-    height: 800px;
-    width: 50%
-}
-.text{
-    border: 1px solid black;
-    height: 800px;
-    width: 50%;
-}
-
-/* footer*/
-footer{
-    border: 1px solid black;
-}
-h5{
-    background-attachment: fixed;
-    background-color: deepskyblue;
-
+form{
+    
+    box-shadow: 20px 20px 10px 10px rgba(0,0,0, 0.2);
 }

@@ -22,10 +22,10 @@ nav{
     font-weight: bold;
 }
 ul li {
-    margin-right: 60px;
+    margin-right: 30px;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
 }
 ul li a:hover{
@@ -36,24 +36,36 @@ ul li a:hover{
 .boite{
     float: right;
     background-color: black;
-    height: 50px;
-    padding: 10px;
-    width: 150px;
+    height: 40px;
+    
+    width: 110px;
     border-radius: 10px;
     font-weight: bold;
     color: white;
     cursor: pointer;
+    margin: 20px;
 
+}
+.carousel-caption .para{
+    border: 1px solid black;
+    height: 300px;
+    width: 400px;
+    background-color: transparent;
+}
+.carousel-caption .teste{
+    color: white;
 }
 .boite li a{
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-decoration: none;
+   
 }
 .boite:hover{
-    background: whitesmoke;
-    color: black;
+    /* background: whitesmoke; */
+    color: #000!important;
 }
 .carousel-inner{
     height: 1000px;
