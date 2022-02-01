@@ -33,7 +33,20 @@ ul li a:hover{
     border-radius: 10px;
     transition: 0.5s;
 }
-.boite{
+form button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+form button a:hover{
+    background-color: white;
+}
+form button{
+    margin-right: 20px;
+}
+/* .boite{
     float: right;
     background-color: black;
     height: 40px;
@@ -55,9 +68,9 @@ ul li a:hover{
 
 }
 .boite:hover{
-    background: whitesmoke;
+     background: whitesmoke; 
     color: black;
-}
-.conn{
+} */
+/* .conn{
     margin-top: 100px;
-}
+} */

@@ -60,30 +60,6 @@ ul li a:hover{
     background: whitesmoke;
     color: black;
 }
-/*contact*/
-/* .contact{
-    height: 700px; 
-    width: 100%;
-    margin-top: 120px; 
-    /* background: linear-gradient(90deg #0e3959 0%,#0e3959 30%, #03a9f5 30%, #03a9f5 100%); */
-  
-
-/* .form{ */
-    /* width: 95%;
-    height: 800px;
-    margin: 30px;
-    background: #fff;
-    border-radius: 6px;
-    padding: 20px 60px 30px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
-
-/* .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:2em ;
-
-} */ 
 
 *{
 	padding: 0;
@@ -207,15 +183,10 @@ textarea{
 		height: 200px;
 	}
 }
-
-
-
-
 footer{
     border: 1px solid black;
 }
-h5{
-    background-attachment: fixed;
-    background-color: deepskyblue;
 
+footer i{
+    color: rgb(18,102, 241);
 }

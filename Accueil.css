@@ -49,6 +49,11 @@ form button a:hover{
 form button{
     margin-right: 20px;
 }
+/* .images{
+    background-image: url("h1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 .carousel-caption .para{
     border: 1px solid black;
     height: 300px;
