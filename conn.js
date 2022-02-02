@@ -1,13 +1,34 @@
-let email = document.getElementById("Email");
-let pwd = document.getElementById("Password");
+let email = document.getElementById("email");
+let pwd = document.getElementById("password");
 let valide = document.getElementById("valide");
-let bdd = JSON.parse(localStorage.getItem("local"));
+let bdd = JSON.parse(localStorage.getItem("users"));
+
 
 
 
 valide.addEventListener("click", e=>{
     e.preventDefault(); 
-    if (pwd.value == bdd.pwd && email.value == bdd.email) {
-        alert("votre inscription reussie");
+    // console.log(bdd);
+    for (let i = 0; i < bdd.length; i++) {
+        const element = bdd[i];
+         console.log(element);
+        console.log(pwd.value);
+
+        if (pwd.value == element.password && email.value == element.email) {
+            
+            location.assign("./Accueil.html");
+        }
+        else{
+            
+        }
+
     }
+
+
+
+
+
+
+    
+   
 })

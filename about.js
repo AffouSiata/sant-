@@ -11,11 +11,11 @@ let next=  document.querySelectorAll(".slick-next");
 console.log(previous);
 for (let i = 0; i < previous.length; i++) {
     const element = previous[i];
-    element.innerHTML =`<i class="fas fa-arrow-circle-left"></i>`;
+    element.innerHTML =`<i class="fas far fa-arrow-circle-left"></i>`;
     
 }
 for (let i = 0; i < next.length; i++) {
     const element = next[i];
-    element.innerHTML =`<i class="fas fa-arrow-circle-right"></i>`;
+    element.innerHTML =`<i class="fas far fa-arrow-circle-right"></i>`;
     
 }

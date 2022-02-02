@@ -61,33 +61,31 @@ ul li a:hover{
 }
 /* fin navbar*/
 .centre{
-    height: 500px;
     width: 100%;
     margin-top: 100px;
+    background-color: rgb(123, 142, 149);
 }
 .texte h1{
     font-size: 40px;
-    color: black;
     font-weight: bold;
-    text-align: center;   
+    text-align: center; 
+    margin-top: 20px;  
 }
-/* .aligne{
-    display: flex;
-    flex-direction: row;
-} */
-/* .haut img{
-   display: block;
-   left: 0px;
-} */
+
 .texte{
     opacity: 1;
-    top: 1px;
+   
+}
+.texte h1:hover{
+    color:  rgb(18,102, 241);
 }
 .flesion{
-    height: 500px;
+    
     display: flex;
     flex-direction: row; 
     margin-right: 20px;
+    padding: 20px;
+    /* margin-top: 50px; */
 }
 img{
     width: 100%;
@@ -95,23 +93,30 @@ img{
 .phrase{
     height: 150px;
 }
+.phrase h1{
+    font-weight: bold; 
+}
+.phrase h1:hover{
+    color:  rgb(18,102, 241);
+}
+.phrase p{
+   margin-top: 30px; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(71, 68, 68, 0.863);
+}
 .text{
-    
-    height: 200px;
-    /* border: 1px solid black; */
-    width: 50%;
     padding-left: 30px;
     text-align: justify;
 }
+.text p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(190, 188, 188, 0.952);
+}
 
 .defile{
-    /* display: flex;  */
-    /* justify-content: center;
-    align-items: center; */
+    background-color: rgba(224, 224, 223, 0.952);
     margin-top: 50px;
     padding-bottom: 50px;
-    
-
 }
 .ply{
     
@@ -119,7 +124,7 @@ img{
     display: flex; 
     justify-content: center;
     align-items: center;
-    margin-right: 350px;
+    /* margin-right: 350px; */
     
 }
 .slick-prev{
@@ -130,8 +135,9 @@ img{
     border: none;
     background: none;
 }
-.fas{
-    color: black;
+.far{
+    font-size: 30px;
+    color: rgba(142, 142, 142, 0.914);
 }
 .card{
     margin-right: 20px;
@@ -141,4 +147,3 @@ img{
 footer i{
     color: rgb(18,102, 241);
 }
-/* rgba(255, 255, 255, 0.913) */

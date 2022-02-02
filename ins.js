@@ -27,4 +27,6 @@ valide.addEventListener("click" , (e) =>{
     localStorage.setItem("users", JSON.stringify(users))
     console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
     // console.log(user);
+
+    location.assign("./conn.html");
 })
