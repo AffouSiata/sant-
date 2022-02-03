@@ -23,10 +23,46 @@ valide.addEventListener("click" , (e) =>{
         }
     let users = JSON.parse(localStorage.getItem("users"))
     // console.log(users)
-    users.push(user);
-    localStorage.setItem("users", JSON.stringify(users))
-    console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
-    // console.log(user);
+   
 
-    location.assign("./conn.html");
+    if(users){
+        // console.log(user);
+        // for (let i = 0; i < users.length; i++) {
+        //     const element = users[i];
+        //     if(email.value == element.email || pwd.value == element.password){
+        //         alert("vos identifiants existe")
+        //     }
+        //     else{
+        //         users.push(user);
+        //         localStorage.setItem("users", JSON.stringify(users))
+        //         console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
+        //     }
+            
+        // }
+        
+        for (const element of users) {
+            if(email.value === element.email || pwd.value === element.password){
+                alert("vos identifiants existe")
+               
+            }
+            else{
+                users.push(user);
+                localStorage.setItem("users", JSON.stringify(users))
+                console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
+            }
+            break;
+           
+        }
+       
+
+
+
+
+
+    }else{
+        users=[];
+        users.push(user);
+        localStorage.setItem("users", JSON.stringify(users))
+    }
+    
 })

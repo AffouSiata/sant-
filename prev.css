@@ -77,16 +77,28 @@ ul li a:hover{
     height: 500px;
     
 }
+.corps.test .title{
+    color:  rgb(18,102, 241);
+}
 .trait{
-    margin-top: 100px;
+    margin-top: 10px;
 }
 .col{
-    height: 450px;
+    height: 460px;
+    margin-bottom:20px!important ;
 }
+
 .card img{
     width: 415px;
     height: 300px;
+    
 }
+/* .card{
+    transition: transform 1s;
+}
+.image{
+    transform: rotateY(180);
+} */
 .title{
     padding: 20px;
     border: 1px solid white;
@@ -105,6 +117,31 @@ ul li a:hover{
 .texte{
     text-align: justify;
     color: #003872;
+}
+.medica{
+    width: 440px;
+    height: 500px;
+
+}
+.titre{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+   
+    
+}
+.back{
+    background-color: rgb(18,102, 241);
+}
+.text1{
+    padding-top: 40px;
+    font-size: 30px;
+}
+.Traitement{
+    margin-top:30px;
+}
+.medica .ima{
+    width: 400px;
 }
 footer i{
     color: rgb(18,102, 241);
