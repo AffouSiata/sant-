@@ -1,6 +1,7 @@
 nav{
     position: absolute;
     width: 100%;
+	background-color: rgba(224, 224, 223, 0.952); 
 }
 .menu{
     justify-content: center;

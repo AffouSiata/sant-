@@ -1,6 +1,7 @@
 nav{
     position: absolute;
     width: 100%;
+    background-color: rgba(224, 224, 223, 0.952); 
 }
 .menu{
     justify-content: center;
@@ -55,7 +56,7 @@ ul li a:hover{
 .centre{
     width: 100%;
     margin-top: 100px;
-    background-color: rgb(123, 142, 149);
+    background-color:rgba(224, 224, 223, 0.952);
 }
 .texte h1{
     font-size: 40px;
@@ -94,7 +95,7 @@ img{
 .phrase p{
    margin-top: 30px; 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgba(71, 68, 68, 0.863);
+  color: black;
 }
 .text{
     padding-left: 30px;
@@ -102,7 +103,7 @@ img{
 }
 .text p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgba(190, 188, 188, 0.952);
+    color: black;
 }
 
 .defile{
