@@ -17,7 +17,7 @@ valide.addEventListener("click", e=>{
 
         if (pwd.value == element.password && email.value == element.email) {
             
-            location.assign("./Accueil.html");
+            location.assign("Accueil.html");
 
         }
         else{

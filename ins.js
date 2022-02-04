@@ -4,13 +4,13 @@ let email = document.getElementById("email");
 let pwd = document.getElementById("pwd");
 let valide = document.getElementById("valider");
 
-if(!localStorage.getItem("users")) {
-    localStorage.setItem("users", JSON.stringify([]))
-    // console.log(localStorage.getItem("users")
-}
+// if(!localStorage.getItem("users")) {
+//     localStorage.setItem("users", JSON.stringify([]))
+//     // console.log(localStorage.getItem("users")
+// }
 
 
-valide.addEventListener("click" , (e) =>{
+valide.addEventListener("submit" , (e) =>{
      e.preventDefault();
     console.log(nom.value);
  
@@ -19,47 +19,35 @@ valide.addEventListener("click" , (e) =>{
             nom: nom.value,
             prenom: prenom.value,
             email: email.value,
-            password: pwd.value,
+            password: pwd.value
         }
-    let users = JSON.parse(localStorage.getItem("users"))
+    let users = JSON.parse(localStorage.getItem("local"))
     // console.log(users)
-   
-
     if(users){
-        // console.log(user);
-        // for (let i = 0; i < users.length; i++) {
-        //     const element = users[i];
-        //     if(email.value == element.email || pwd.value == element.password){
-        //         alert("vos identifiants existe")
-        //     }
-        //     else{
-        //         users.push(user);
-        //         localStorage.setItem("users", JSON.stringify(users))
-        //         console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
-        //     }
-            
-        // }
-        
         for (const element of users) {
-            if(email.value === element.email || pwd.value === element.password){
+            console.log(element);
+            if(email.value == element.email || pwd.value == element.password){
                 alert("vos identifiants existe")
-               
             }
             else{
                 users.push(user);
-                localStorage.setItem("users", JSON.stringify(users))
-                console.log("users >>>> ", JSON.parse(localStorage.getItem("users")))
+                localStorage.setItem("local", JSON.stringify(users))
             }
-            break;
-           
+            
+            
         }
-       
+
+    }
 
 
-    }else{
+    else{
         users=[];
         users.push(user);
-        localStorage.setItem("users", JSON.stringify(users))
+        localStorage.setItem("local", JSON.stringify(users))
     }
-    
+   
+    nom.value="";
+    prenom.value="";
+    email.value="";
+    pwd.value="";
 })
