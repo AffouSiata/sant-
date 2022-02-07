@@ -3,13 +3,7 @@ let prenom = document.getElementById("prenom");
 let email = document.getElementById("email");
 let pwd = document.getElementById("pwd");
 let valide = document.getElementById("valider");
-let error =document.querySelector(".message")
-
-// if(!localStorage.getItem("users")) {
-//     localStorage.setItem("users", JSON.stringify([]))
-//     // console.log(localStorage.getItem("users")
-// }
-
+let error =document.querySelector(".message");
 
 valide.addEventListener("submit" , (e) =>{
      e.preventDefault();
@@ -39,6 +33,11 @@ valide.addEventListener("submit" , (e) =>{
                 users.push(user);
                 localStorage.setItem("local", JSON.stringify(users))
 
+                
+                    error.textContent=" Merci votre inscription a reussi"
+                    error.style.color="green";
+                
+
 
             }
              
@@ -46,18 +45,23 @@ valide.addEventListener("submit" , (e) =>{
         }
         
         
-
     }
     
     else{
         users=[];
         users.push(user);
         localStorage.setItem("local", JSON.stringify(users))
+
+
+
+        location.assign('conn.html');
+
+       
     }
    
-    nom.value="";
-    prenom.value="";
-    email.value="";
-    pwd.value="";
-    location.reload('conn.html');
+    nom.value=" ";
+    prenom.value=" ";
+    email.value=" ";
+    pwd.value=" ";
+    
 })

@@ -104,12 +104,16 @@ img{
 .text p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    font-size: 20px;
 }
 
 .defile{
     background-color: rgba(224, 224, 223, 0.952);
     margin-top: 50px;
     padding-bottom: 50px;
+}
+.defile p{
+    font-size: 20px; 
 }
 .ply{
     
@@ -139,4 +143,7 @@ img{
 /* footer*/
 footer i{
     color: rgb(18,102, 241);
+}
+.sante{
+    text-align: justify;
 }

@@ -92,7 +92,11 @@ small{
     padding-top: 20px;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 footer i{
     color: rgb(18,102, 241);
+}
+.sante{
+    text-align: justify;
 }
