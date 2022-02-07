@@ -3,6 +3,7 @@ let prenom = document.getElementById("prenom");
 let email = document.getElementById("email");
 let pwd = document.getElementById("pwd");
 let valide = document.getElementById("valider");
+let error =document.querySelector(".message")
 
 // if(!localStorage.getItem("users")) {
 //     localStorage.setItem("users", JSON.stringify([]))
@@ -27,19 +28,27 @@ valide.addEventListener("submit" , (e) =>{
         for (const element of users) {
             console.log(element);
             if(email.value == element.email || pwd.value == element.password){
-                alert("vos identifiants existe")
+
+               error.textContent=" Vos identifiants exits déja!!"
+                error.style.color="red";
+
+
+               
             }
             else{
                 users.push(user);
                 localStorage.setItem("local", JSON.stringify(users))
+
+
             }
-            
+             
             
         }
+        
+        
 
     }
-
-
+    
     else{
         users=[];
         users.push(user);
@@ -50,4 +59,5 @@ valide.addEventListener("submit" , (e) =>{
     prenom.value="";
     email.value="";
     pwd.value="";
+    location.reload('conn.html');
 })

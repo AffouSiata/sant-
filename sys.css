@@ -12,7 +12,7 @@ nav{
 	background-color: transparent !important;
 }
 .cote{
-    color: white!important;
+    color: black!important;
     font-size: 40px!important;
 }
 .navbar-brand{
@@ -92,4 +92,7 @@ ul li a:hover{
     color: black;
     font-size: 20px;
     text-align: center;
+}
+.sante{
+    text-align: justify;
 }
